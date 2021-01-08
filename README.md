@@ -35,7 +35,7 @@ where "url you just copied" (without the quotation marks) is the url to this rep
 For example:
 
 ```
-git clone https://github.com/sanscript-tech/hacking-tools-scripts
+git clone https://github.com/Mukulbaid63/Awesome-Javascript-Minis.git
 ```
 
 
