@@ -14,21 +14,21 @@ yargs.command({
 }).command({
     command: 'subtract',
     describe: 'Subtraction of two numbers',
-    handler(){
-
+    handler(argv){
+        calc.subtract(argv._)
     }
 }).command({
     command: 'multiply',
     describe: 'Multiplication of two numbers',
-    handler(){
-
+    handler(argv){
+        calc.multiply(argv._)
     }
 })
 .command({
     command: 'divide',
     describe: 'Division of two numbers',
-    handler(){
-
+    handler(argv){
+        calc.divide(argv._)
     }
 })
 
