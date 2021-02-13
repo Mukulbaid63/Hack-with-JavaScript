@@ -9,5 +9,14 @@ const unFormatNumber = (num) => {
 };
 
 const operatorsList = document.querySelectorAll(`.operator`);
-
-console.log(operatorsList);
+Array.from(operatorsList).forEach((operator) =>
+  operator.addEventListener("click", function () {
+    console.log(this.id);
+  })
+);
+const numbersList = document.querySelectorAll(`.number`);
+Array.from(numbersList).forEach((operator) =>
+  operator.addEventListener("click", function () {
+    console.log(this.id);
+  })
+);
