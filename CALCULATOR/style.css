@@ -65,6 +65,8 @@
 .output-value {
   font-weight: bold;
   font-size: 3.4rem;
+  transition: 200ms ease-in all;
+  overflow: hidden;
   margin-right: 15px;
   color: #ffad00;
 }
