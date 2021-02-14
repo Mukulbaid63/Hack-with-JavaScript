@@ -19,6 +19,11 @@
   height: 550px;
   padding: 3px 5px;
   box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  border-radius: 10px;
+  border: 10px solid;
+  border-width: 5px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 
 .result {
@@ -26,6 +31,7 @@
   margin: 5px 0;
   display: flex;
   flex-direction: column;
+  /* border-bottom: 2px #dbdbdb solid; */
 }
 .keyboard {
   height: 410px;

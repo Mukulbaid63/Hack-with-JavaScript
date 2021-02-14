@@ -2,8 +2,9 @@ const ouputContainer = document.querySelector(`.output-value`);
 const prevValueContainer = document.querySelector(`.prev-value`);
 
 const getFormattedNum = (num) => {
+  if (num == "-") return "";
   const n = Number(num);
-  const value = n.toLocaleString("en");
+  const value = n.toLocaleString("en-IN");
   return value;
 };
 
@@ -32,18 +33,23 @@ Array.from(operatorsList).forEach((operator) =>
     } else {
       let output = getOutputNum();
       let history = getHistoryNum();
-      if (output != "") {
-        console.log("called");
-        output = getUnFormattedNumber(output);
+
+      if (output == "" && history != "") {
+        history = isNaN(history[history.length - 1])
+          ? history.substr(0, history.length - 1)
+          : history;
+      }
+      if (output != "" || history != "") {
+        output = output === "" ? output : getUnFormattedNumber(output);
         history += output;
-        console.log(history);
-        console.log(this.id);
         if (this.id == "=") {
-          console.log("Called =");
-          eval(history);
+          prevValueContainer.innerText = "";
+          ouputContainer.innerText = getFormattedNum(eval(history));
+          history = "";
         } else {
           history += this.id;
-          console.log(history);
+          ouputContainer.innerText = "";
+          prevValueContainer.innerText = history;
         }
       }
     }
