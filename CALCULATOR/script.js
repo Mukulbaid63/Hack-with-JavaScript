@@ -12,32 +12,40 @@ const getUnFormattedNumber = (num) => {
 };
 
 const getOutputNum = () => {
-  return document.querySelector(`.output-value`).innerText;
+  return ouputContainer.innerText;
 };
 
 const getHistoryNum = () => {
-  return document.querySelector(`.prev-value`).innerText;
+  return prevValueContainer.innerText;
 };
 
 const operatorsList = document.querySelectorAll(`.operator`);
 
 Array.from(operatorsList).forEach((operator) =>
   operator.addEventListener("click", function () {
-    switch (this.id) {
-      case "clear":
-        {
-          prevValueContainer.innerText = "";
-          ouputContainer.innerText = "";
+    if (this.id === "clear") {
+      prevValueContainer.innerText = "";
+      ouputContainer.innerText = "";
+    } else if (this.id === "backspace") {
+      const num = getUnFormattedNumber(ouputContainer.innerText);
+      ouputContainer.innerText = getFormattedNum(num.toString().slice(0, -1));
+    } else {
+      let output = getOutputNum();
+      let history = getHistoryNum();
+      if (output != "") {
+        console.log("called");
+        output = getUnFormattedNumber(output);
+        history += output;
+        console.log(history);
+        console.log(this.id);
+        if (this.id == "=") {
+          console.log("Called =");
+          eval(history);
+        } else {
+          history += this.id;
+          console.log(history);
         }
-        break;
-      case "backspace":
-        {
-          const num = getUnFormattedNumber(ouputContainer.innerText);
-          ouputContainer.innerText = getFormattedNum(
-            num.toString().slice(0, -1)
-          );
-        }
-        break;
+      }
     }
   })
 );
@@ -50,7 +58,7 @@ Array.from(numbersList).forEach((operator) =>
     if (outputVal !== NaN) {
       const num = outputVal + this.id;
       if (num.length > 9) ouputContainer.style.fontSize = "30px";
-      document.querySelector(`.output-value`).innerText = getFormattedNum(num);
+      ouputContainer.innerText = getFormattedNum(num);
     }
   })
 );
