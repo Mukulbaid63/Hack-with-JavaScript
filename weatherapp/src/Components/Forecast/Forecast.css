@@ -1,0 +1,27 @@
+h1 {
+  color: white;
+}
+
+.TextInput {
+  font-size: large;
+  padding: 5px;
+  display: block;
+  margin: 5px auto;
+}
+
+.TextInput:focus {
+  outline: none;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #0575e6;
+}
+
+.Button {
+  background: #0575e6;
+  color: white;
+  display: block;
+  padding: 0.7rem;
+  font-size: 0.9em;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 30px auto;
+}
