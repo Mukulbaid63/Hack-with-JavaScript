@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(170, 248, 222);
+    font-family: sans-serif;
+  }
+  
+  .add-button:hover {
+    cursor: pointer;
+    background-color: gray;
+  }
+  
+  ul {
+    list-style-type: none; 
+  }
+  
+  
+  .container {
+    min-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: black;
+    font-size: 3rem;
+  }
+  
+  
+  
+  .todo-form {
+    margin: 40px 0px;
+  }
+  
+  .todo-input {
+    width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .add-button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 1.2rem;
+  }
+  
+
+  .todo-items {
+    min-width: 350px;
+  }
+  
+  
+  .item {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .item:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  
+  .item:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  
+  
+  
+  .checkbox {
+    margin-right: 10px;
+  }
+  
+  .delete-button {
+    float: right;
+    color:#dc143c;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 2px 5px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 550;
+  }
+  .delete-button:hover{
+      cursor: pointer;
+      background-color: #dc143c;
+      color:white
+      
+  }
+  
+  .checked { 
+    text-decoration: line-through;
+  }
+  
+footer{
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+}
