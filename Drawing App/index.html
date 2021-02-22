@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Drawing</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <canvas id="canvas" class="box effect7">
+            </canvas>
+            <div class="colorBox">
+                <input type="color" id="favcolor" name="favcolor" value="#11111" onchange="colorChange(this)" onkeyup="colorChange(this)">
+                <input type="range" min="1" max="100" value="10" class="slider" id="range">
+                <button onclick="clearall()"><img src="https://img.icons8.com/dusk/64/000000/eraser.png"/></button>
+            </div>
+        </div>
+        
+        <script>
+            let color = "black";
+            let lineWidth = 10;
+            var slider = document.getElementById("range");
+            window.addEventListener('load',()=>{
+                const canvas = document.querySelector('#canvas');
+                const ctx = canvas.getContext("2d");
+            
+            
+                canvas.height = window.innerHeight -50;
+                canvas.width = window.innerWidth -50 ;
+                let painting = false;
+                
+                function startPosition(){
+                    painting = true;
+                }
+                function finishedPainting(){
+                    painting = false;
+                    ctx.beginPath();
+                }
+                function draw(e){
+                    if(!painting) return;
+                    ctx.lineWidth = lineWidth;
+                    ctx.lineCap = "round";
+                    ctx.strokeStyle = color;
+                    ctx.lineTo(e.clientX,e.clientY);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(e.clientX,e.clientY)
+            
+                }
+                canvas.addEventListener('mousedown',startPosition);
+                canvas.addEventListener('mouseup',finishedPainting);
+                canvas.addEventListener('mousemove',draw);
+            
+            })
+            function colorChange(e){
+                color = e.value;
+            } 
+            slider.oninput = function() {
+                lineWidth = this.value;
+            }
+            function clearall()
+            {
+                var canvas = document.getElementById('canvas'),
+                ctx = canvas.getContext("2d");
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }
+        </script>
+    </body>
+</html>
