@@ -1,4 +1,4 @@
-# Hack with JavaScript
+# Hack with JavaScript ! ! !
 One stop for all the Vanilla JS apps.This repo is created for all the VanillaJS mini projects which are really of great use in our daily life.
 
 ## Points to keep in mind while contributing:
