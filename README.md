@@ -1,5 +1,5 @@
 # Hack with JavaScript ! ! !
-One stop for all the Vanilla JS apps.This repo is created for all the VanillaJS mini projects which are really of great use in our daily life.
+One stop for all the Vanilla JS apps.This repository is created for all the VanillaJS mini projects which are really of great use in our daily life.
 
 ## Points to keep in mind while contributing:
 - Issues will be assigned on a first come, first serve basis. You just have to comment on the issue, asking to be assigned, and it will be done if found fit and complete the issue within 7 days.
