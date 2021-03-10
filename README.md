@@ -1,4 +1,16 @@
-# Hack with JavaScript ! ! !
+<h1 align="center"> Hack with JavaScript ! ! ! </h1>
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![GitHub open issues](https://img.shields.io/github/issues-raw/Mukulbaid63/Hack-with-JavaScript?color=%23f&logo=Github)
+![GitHub open pull requests](https://img.shields.io/github/issues-pr-raw/Mukulbaid63/Hack-with-JavaScript?logo=Github)
+![GitHub contributors](https://img.shields.io/github/contributors/Mukulbaid63/Hack-with-JavaScript?logo=Github)
+![GitHub forks](https://img.shields.io/github/forks/Mukulbaid63/Hack-with-JavaScript?color=%233493eb&label=Forks&logo=Github)
+![GitHub Repo stars](https://img.shields.io/github/stars/Mukulbaid63/Hack-with-JavaScript?color=%233493eb&logo=Github)
+![GitHub watchers](https://img.shields.io/github/watchers/Mukulbaid63/Hack-with-JavaScript?logo=Github)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Mukulbaid63/Hack-with-JavaScript?color=%2300&logo=Github)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/Mukulbaid63/Hack-with-JavaScript?logo=Github)<br>
+
 One stop for all the Vanilla JS apps.This repository is created for all the VanillaJS mini projects which are really of great use in our daily life.
 
 ## Points to keep in mind while contributing:
