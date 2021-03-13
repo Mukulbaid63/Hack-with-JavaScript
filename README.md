@@ -109,4 +109,4 @@ Now submit the pull request.
 
 Soon we will be merging all your changes into the master branch of this project. You will get a notification email once the changes have been merged.
 
-## CONTRIBUTORS WALL:
+<h1 align="center"> CONTRIBUTORS WALL:</h1>
