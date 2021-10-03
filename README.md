@@ -114,7 +114,7 @@ Soon we will be merging all your changes into the master branch of this project.
 - [Python](https://github.com/Mukulbaid63/Hack-with-JavaScript)
 - [JavaScript](https://github.com/Mukulbaid63/Hack-with-JavaScript)
 - [GoLang](https://github.com/Mukulbaid63/Hack-with-JavaScript)
-- [Bash](https://github.com/Mukulbaid63/Hack-with-JavaScript)
+- [Bash](https://github.com/Mukulbaid63/Hack-with-JavaScript) 
 - [PowerShell](https://github.com/Mukulbaid63/Hack-with-JavaScript)
 
 <h1 align="center"> CONTRIBUTORS WALL:</h1>
