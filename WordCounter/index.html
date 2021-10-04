@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Word Counter</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+        <div class="container-fluid">
+            <div class="navbar-brand mb-0 h1 text-center w-100">Word Counter</div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="col-xl-8 offset-xl-2 mb-3">
+
+            <div class="mb-3">
+                <label class="form-label">Simply input text to start counting OR</label>
+                <input class="form-control form-control-sm" type="file" name="file-upload" id="upload-file">
+
+            </div>
+
+            <div class="row d-flex justify-content-center mb-3">
+                <div class="col-md-4 mb-2">
+                    <div class="card p-2">
+                        <div class="text-center d-flex align-items-center d-md-block justify-content-between">
+                            <div>
+                                <small>Words</small>
+                            </div>
+                            <div>
+                                <h2 class="m-0" id="total-word-strong">0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-2">
+                    <div class="card p-2">
+                        <div class="text-center d-flex align-items-center d-md-block justify-content-between">
+                            <div>
+                                <small>Characters</small>
+                            </div>
+                            <div>
+                                <h2 class="m-0" id="total-characters-strong">0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-2">
+                    <div class="card p-2">
+                        <div class="text-center d-flex align-items-center d-md-block justify-content-between">
+                            <div>
+                                <small>Characters without spaces</small>
+                            </div>
+                            <div>
+                                <h2 class="m-0" id="total-char-without-spacestrong">0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mb-2">
+                    <div class="card p-2">
+                        <div class="text-center d-flex align-items-center d-md-block justify-content-between">
+                            <div>
+                                <small>Sentences</small>
+                            </div>
+                            <div>
+                                <h2 class="m-0" id="sentences">0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-2">
+                    <div class="card p-2">
+                        <div class="text-center d-flex align-items-center d-md-block justify-content-between">
+                            <div>
+                                <small>Paragraphs</small>
+                            </div>
+                            <div>
+                                <h2 class="m-0" id="paragraphs">0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Type or paste your text" id="input" spellcheck="false" rows="45"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
